@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "demo for WDI 60",
   "main": "server.js",
+  "private": true,
   "scripts": {
     "clean": "rm -rf dist && rm -rf node_modules",
     "heroku-prebuild": "scripts/deployment_react.sh",
@@ -11,29 +12,43 @@
     "rebuild": "webpack -d --progress --colors",
     "watch": "webpack -d --progress --watch"
   },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "Daniel Pease",
+  "license": "MIT",
+  "homepage": "https://github.com/daniel-j-pease/jwt-bcrypt-demo",
   "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body": "^5.1.0",
     "body-parser": "^1.15.2",
     "dotenv": "^2.0.0",
-    "env": "0.0.2",
     "express": "^4.14.0",
     "express-jwt": "^5.1.0",
     "jsonwebtoken": "^7.1.9",
     "morgan": "^1.7.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pg-promise": "^5.2.7"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daniel-j-pease/jwt-bcrypt-demo.git"
-  },
-  "author": "Daniel Pease",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/daniel-j-pease/jwt-bcrypt-demo/issues"
-  },
-  "homepage": "https://github.com/daniel-j-pease/jwt-bcrypt-demo#readme"
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-strict-mode": "^6.11.3",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "dotenv": "^2.0.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "html-webpack-template": "^5.0.0",
+    "postcss-loader": "^1.1.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1"
+  }
 }

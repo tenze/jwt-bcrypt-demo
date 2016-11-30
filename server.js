@@ -14,11 +14,4 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// app.use(expressJWT({secret: process.env.secret}).unless(
-//   {path: ['/favicon.ico', '/user/signup', '/user/login', '/api/storefronts', '/api/myStorefront', '/api/storefront', '/api/items', '/search/zip']}
-// ));
-
-// const userRouter = require('./routes/user.js');
-// app.use('/user', userRouter);
-
 app.listen(PORT, () => {console.log('Overpriced organic artisanal tacos on port', PORT)});

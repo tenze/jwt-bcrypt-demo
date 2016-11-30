@@ -1,5 +1,11 @@
+DROP TABLE IF EXISTS demoUsers;
+
+BEGIN;
+
 CREATE TABLE demoUsers(
   user_id SERIAL PRIMARY KEY,
   username VARCHAR NOT NULL UNIQUE,
   password VARCHAR NOT NULL UNIQUE
 );
+
+COMMIT;

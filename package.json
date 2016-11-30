@@ -1,0 +1,29 @@
+{
+  "name": "jwt-bcrypt-demo",
+  "version": "1.0.0",
+  "description": "demo for WDI 60",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-jwt": "^5.1.0",
+    "jsonwebtoken": "^7.1.9",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-j-pease/jwt-bcrypt-demo.git"
+  },
+  "author": "Daniel Pease",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-j-pease/jwt-bcrypt-demo/issues"
+  },
+  "homepage": "https://github.com/daniel-j-pease/jwt-bcrypt-demo#readme"
+}

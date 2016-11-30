@@ -3,8 +3,18 @@
   "version": "1.0.0",
   "description": "demo for WDI 60",
   "main": "server.js",
+  "scripts": {
+    "clean": "rm -rf dist && rm -rf node_modules",
+    "heroku-prebuild": "scripts/deployment_react.sh",
+    "heroku-postbuild": "scripts/deployment_cleanup.sh",
+    "start": "node server.js",
+    "rebuild": "webpack -d --progress --colors",
+    "watch": "webpack -d --progress --watch"
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "env": "0.0.2",
     "express": "^4.14.0",
     "express-jwt": "^5.1.0",
     "jsonwebtoken": "^7.1.9",

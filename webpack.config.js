@@ -7,7 +7,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BUILD_DIR         = path.resolve(__dirname, 'dist');
 const APP_DIR           = path.resolve(__dirname, 'src');
 
-
 module.exports = {
   entry: `${APP_DIR}/index.js`,
   output: {
@@ -23,7 +22,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'jwt bcrypt demo',
+      title: 'jwt-bcrypt-demo',
       xhtml: true,
       inject: false,
       template: require('html-webpack-template'),
@@ -39,7 +38,7 @@ module.exports = {
     loaders: [
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')
       },
       {
         test: /\.svg$/,

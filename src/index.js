@@ -1,8 +1,6 @@
+import React    from 'react';
+import ReactDOM from 'react-dom';
+import App      from './Components/App/App.jsx';
 
-import React    from 'react'
-import ReactDOM from 'react-dom'
-import App      from './Components/App/App.jsx'
-
-ReactDOM.render(<App />, document.querySelector('#root-container'),
-
-);
+// mount our App at #container
+ReactDOM.render(<App />, document.querySelector('#root-container'));

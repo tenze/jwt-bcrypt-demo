@@ -1,35 +1,27 @@
 {
   "name": "jwt-bcrypt-demo",
   "version": "1.0.0",
-  "description": "demo for WDI 60",
+  "description": "jwt bcrypt demo",
   "main": "server.js",
-  "private": true,
   "scripts": {
     "clean": "rm -rf dist && rm -rf node_modules",
-    "heroku-prebuild": "scripts/deployment_react.sh",
-    "heroku-postbuild": "scripts/deployment_cleanup.sh",
     "start": "node server.js",
     "rebuild": "webpack -d --progress --colors",
     "watch": "webpack -d --progress --watch"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "git@github.com:daniel-j-pease/jwt-bcrypt-demo.git"
   },
   "author": "Daniel Pease",
   "license": "MIT",
-  "homepage": "https://github.com/daniel-j-pease/jwt-bcrypt-demo",
   "dependencies": {
-    "bcryptjs": "^2.3.0",
-    "body": "^5.1.0",
     "body-parser": "^1.15.2",
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
-    "express-jwt": "^5.1.0",
-    "jsonwebtoken": "^7.1.9",
     "morgan": "^1.7.0",
     "path": "^0.12.7",
-    "pg-promise": "^5.2.7"
+    "pg-promise": "^5.4.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",

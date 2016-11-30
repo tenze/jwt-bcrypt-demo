@@ -12,6 +12,8 @@ const PORT        = process.argv[2] || process.env.port || 3000;
 app.use(logger('dev'));
 
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'dist')));
+
 // app.use(expressJWT({secret: process.env.secret}).unless(
 //   {path: ['/favicon.ico', '/user/signup', '/user/login', '/api/storefronts', '/api/myStorefront', '/api/storefront', '/api/items', '/search/zip']}
 // ));
